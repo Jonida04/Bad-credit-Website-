@@ -8,86 +8,78 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
 }
 
 body {
     font-family: "Noto Sans", sans-serif;
     height: 100vh;
-    background-color:#f9fafa;
+    background-color: var(--secondaryDr);
 }
 
-.container {
-    /* width: 90%; */
-    margin: 0 auto; /* Centers the container horizontally */
-    height: 100%; /* Adjust the height as needed */
-/* Optional: to make it visible */
-}
+/* .container {
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+} */
 
 navbar {
     display: flex;
-    /* Additional styling for the navbar if needed */
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding:10px 5%;
+    padding: 10px 5%;
 }
 
-ul
-{
-    display: flex; /* Enable Flexbox on the list */
-    gap: 45px; /* Define the space between list items */
-    list-style: none; /* Remove default list styling */
+ul {
+    display: flex;
+    gap: 45px;
+    list-style: none;
     padding: 0;
-    
-    
 }
 
-a
-{
+a {
     text-decoration: none;
     color: #3d4c63;
     font-size: 18px;
     font-weight: 600;
-    
 }
-button
-{
+
+button {
     border-radius: 10px;
     padding: 10px 20px;
-    background-color: #1652f0;
+    background-color: var(--primary);
     color: white;
     border-style: none;
     font-size: 18px;
-
 }
 
-.home
-{
+.home {
     width: 90%;
-    margin: 5% auto ;
+    margin: 5% auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-}
-.text-cont
-{
-    width: 85%;
-}
-span
-{
-    color: #1652f0;
+    gap: 20px;
 }
 
-.title
-{
+.text-cont {
+    width: 85%;
+}
+
+span {
+    color: var(--primary);
+}
+
+.title {
     font-size: 48px;
     font-weight: bold;
     padding-bottom: 30px;
 }
-p
-{
-   margin-bottom: 20px;
 
+p {
+    margin-bottom: 20px;
 }
+
 .list {
     margin-bottom: 20px;
 }
@@ -95,27 +87,116 @@ p
 .list:last-child {
     margin-bottom: 50px;
 }
-button:last-child
-{
 
+button:last-child {
     background-color: white;
-    border: #1652f0 solid 1px;
-    color: #1652f0;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     margin-left: 20px;
 }
-.fa
-{
-    color:#1652f0;
+
+.fa {
+    color: var(--primary);
 }
+
 .image-cont {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%; /* Ensure the container has height */
-    /* background-color: red;  */
+    height: 100%;
 }
 
 .image-cont img {
     min-width: 55%;
     height: auto;
 }
+
+.match {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.match .title {
+    font-weight: 500;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.match ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid var(--primary); */
+}
+
+.match li {
+    /* border: 1px solid var(--primary); */
+    flex: 1; /* Allow flex items to grow equally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center; /* Center align text */
+    max-width: 200px; /* Optional: max width for items */
+    list-style: none;
+    border: #3d4c63 1px solid;
+    border-radius: 10px;
+     position: relative; /* Necessary for the pseudo-element positioning */
+    overflow: hidden;
+}
+
+.match li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    z-index: 1;
+}
+.match li img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover; 
+    margin-bottom: 10px; 
+
+}
+.match span
+{
+    color:#3d4c63;
+    display: flex;
+    align-items: center;
+
+}
+.match .fa
+{
+    color: #3d4c63;
+}
+
+.match span i
+{
+
+    margin-left: 10px;
+}
+.match li:hover {
+   
+    border: #1652f0 1px solid;
+    background-color: rgba(139, 215, 255, 0.262);  
+    
+}
+
+.match li:hover .fa 
+{
+    color: #1652f0;
+}
+
+.match li:hover span
+{
+    color: #1652f0;
+}
+
