@@ -1,0 +1,121 @@
+:root {
+    --primary: #1652f0;
+    --secondaryWhite: #e7e9eb;
+    --secondaryHat: #f3f4f5;
+    --secondaryDr: #f9fafa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    height: 100vh;
+    background-color:#f9fafa;
+}
+
+.container {
+    /* width: 90%; */
+    margin: 0 auto; /* Centers the container horizontally */
+    height: 100%; /* Adjust the height as needed */
+/* Optional: to make it visible */
+}
+
+navbar {
+    display: flex;
+    /* Additional styling for the navbar if needed */
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding:10px 5%;
+}
+
+ul
+{
+    display: flex; /* Enable Flexbox on the list */
+    gap: 45px; /* Define the space between list items */
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    
+    
+}
+
+a
+{
+    text-decoration: none;
+    color: #3d4c63;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+button
+{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: #1652f0;
+    color: white;
+    border-style: none;
+    font-size: 18px;
+
+}
+
+.home
+{
+    width: 90%;
+    margin: 5% auto ;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.text-cont
+{
+    width: 85%;
+}
+span
+{
+    color: #1652f0;
+}
+
+.title
+{
+    font-size: 48px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+p
+{
+   margin-bottom: 20px;
+
+}
+.list {
+    margin-bottom: 20px;
+}
+
+.list:last-child {
+    margin-bottom: 50px;
+}
+button:last-child
+{
+
+    background-color: white;
+    border: #1652f0 solid 1px;
+    color: #1652f0;
+    margin-left: 20px;
+}
+.fa
+{
+    color:#1652f0;
+}
+.image-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the container has height */
+    /* background-color: red;  */
+}
+
+.image-cont img {
+    min-width: 55%;
+    height: auto;
+}
