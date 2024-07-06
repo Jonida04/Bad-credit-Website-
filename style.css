@@ -33,7 +33,7 @@ navbar {
 
 ul {
     display: flex;
-    gap: 45px;
+    gap: 45px; 
     list-style: none;
     padding: 0;
 }
