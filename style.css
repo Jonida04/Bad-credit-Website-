@@ -251,3 +251,31 @@ button:last-child {
     width: 100%;
 
 }
+
+footer
+{
+    background-color: white;
+    display: flex;
+    padding: 5% 5%;
+    margin: 5% auto;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0;
+    
+}
+footer .title
+{
+    font-size: 24px;
+    font-weight: 500;
+}
+footer ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.about {
+    width: 30%;
+}
