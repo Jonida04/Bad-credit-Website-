@@ -23,7 +23,7 @@ body {
     height: 100%;
 } */
 
-navbar {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,6 +117,8 @@ button:last-child {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 90%;
+    margin: 5% auto;
 }
 
 .match .title {
@@ -200,3 +202,52 @@ button:last-child {
     color: #1652f0;
 }
 
+.faq
+{
+    width: 90%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.img-cont
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.img-cont img {
+    width: 500px;
+    height: auto;
+}
+
+.faq .text-cont
+{
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: red; */
+
+}
+.faq .text-cont ul
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    font-size: 20px;
+    padding: 30px;
+    gap: 40px;
+}
+.faq .text-cont li
+{
+    border: #3d4c63 1px solid;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
