@@ -412,14 +412,39 @@ footer ul {
 .faq .text-cont ul {
 
     font-size: 18px;
-
     gap: 15px;
+    
+}
+.faq .text-cont
+{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .faq .text-cont li {
     text-align: start;
     width: 100%;
 }
-
-
+.hide
+{
+    display: none;
+}
+footer
+{
+    flex-wrap: wrap;
+}
+.about
+{
+    flex: 1 0 100%;
+}
+footer .title
+{
+    font-size: 18px;
+}
+.follow , .products , .legal , .support
+{
+    flex: 1 0 50%;
+    margin-bottom: 20px;
+}
 }
