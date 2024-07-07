@@ -394,5 +394,32 @@ footer ul {
     margin: 5px;
 }
 
+.faq {
+    width: 100%;
+    margin: 5% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    text-align: center;
+}
+
+
+.img-cont img {
+    width: 350px;
+    height: auto;
+}
+
+.faq .text-cont ul {
+
+    font-size: 18px;
+
+    gap: 15px;
+}
+
+.faq .text-cont li {
+    text-align: start;
+    width: 100%;
+}
+
 
 }
