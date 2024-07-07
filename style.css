@@ -276,7 +276,10 @@ footer ul {
     margin: 4px 0;
     transition: 0.4s;
 }
-
+.nav-links
+{
+    align-items: center;
+}
 @media only screen and (max-width: 1089px) {
     header {
         display: flex;
@@ -300,6 +303,7 @@ footer ul {
         position: absolute;
         top: 60px;
         left: 0;
+        
     }
 
     .nav-links li {
